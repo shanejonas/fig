@@ -6,9 +6,9 @@ Fig
 [![PyPI version](https://badge.fury.io/py/fig.png)](http://badge.fury.io/py/fig)
 <!--/hide-on-homepage-->
 
-Punctual, lightweight development environments using Docker.
+Lightweight, repeatable development environments using Docker.
 
-Fig is a tool for defining and running isolated application environments. You define the services which comprise your app in a simple, version-controllable YAML configuration file that looks like this:
+Fig is a tool for defining and running isolated application environments. You define the services which make up your app in a simple, version-controllable YAML configuration file that looks like this:
 
 ```yaml
 web:
@@ -24,6 +24,8 @@ db:
 Then type `fig up`, and Fig will start and run your entire app:
 
 ![example fig run](https://orchardup.com/static/images/fig-example-large.f96065fc9e22.gif)
+
+Fig is both a lightweight Vagrant and a next-level Foreman. Like Foreman, it runs your app's various services and aggregates their log output in one place; like Vagrant, it makes your environment isolated and repeatable—and it runs your *whole* app, including the database.
 
 There are commands to:
 
