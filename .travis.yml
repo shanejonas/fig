@@ -12,7 +12,7 @@ install: script/travis-install
 script:
 - pwd
 - env
-- sekexe/run "`pwd`/script/travis $TRAVIS_PYTHON_VERSION"
+- script/travis
 deploy:
   provider: pypi
   user: orchard
